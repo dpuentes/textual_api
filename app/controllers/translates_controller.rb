@@ -1,7 +1,6 @@
 class TranslatesController < ActionController::API
     attr_accessor :base
     def index
-        
     end
 
     def create
@@ -10,7 +9,7 @@ class TranslatesController < ActionController::API
         s = Base64.decode64(str)
 
         file_name = rand(1000)
-        path = "app/images/#{rand}.png"
+        path = "tmp/#{rand}.png"
 
         File.open(path, 'wb') do |f|
             f.write(s)

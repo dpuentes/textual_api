@@ -19,6 +19,6 @@ class TranslatesController < ActionController::API
         puts image.to_s
 
 
-        render :json => {:success=>true, :message=>"Request ok"}, status: 200
+        render :json => {:success=>true, :message=>"#{image.to_s}"}, status: 200
     end
 end

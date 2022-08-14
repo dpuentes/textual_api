@@ -1,6 +1,7 @@
 class TranslatesController < ActionController::API
     attr_accessor :base
     def index
+        render :json => {:success=>true, :message=>"Request ok"}, status: 200
     end
 
     def create

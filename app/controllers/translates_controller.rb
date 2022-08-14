@@ -1,4 +1,9 @@
-class TranslateController < ActionController::API
+class TranslatesController < ActionController::API
+    attr_accessor :base
+    def index
+
+    end
+
     def create
         str = Base64.encode64(File.read("app/images/62.png"))
         

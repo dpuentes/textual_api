@@ -1,7 +1,6 @@
 class TranslatesController < ActionController::API
     attr_accessor :base
     def index
-
     end
 
     def create
